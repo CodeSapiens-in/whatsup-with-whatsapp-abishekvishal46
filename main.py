@@ -22,5 +22,13 @@ for message in chat_messages:
 print(participant_names)
 total_participants = len(participant_names)
 print("Total number of participants:", total_participants)
+co=0
+for i in dates:
+     for j in chat_messages:
+         if  i in j:
+             co+=1
+
+     print(f"{i},there are {co} messages in this dates")
+     co=0
 
     
