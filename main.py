@@ -1,4 +1,4 @@
-with open(r"_chat.txt", 'r') as fp:
+with open(r"_chat.txt",  encoding="utf8") as fp:
     text = fp.readlines()
     lines = len(text)
     pollcount =0
