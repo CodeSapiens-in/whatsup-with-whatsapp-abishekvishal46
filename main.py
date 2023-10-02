@@ -10,8 +10,6 @@ participant_names = []
 participant_names_via_link = []
 count=0
 count_1=0
-
-
 for message in chat_messages:
     if "joined" in message:
         count+=1
@@ -39,5 +37,14 @@ for message in chat_messages:
 
 print("No.of links that are shared",links_count)
 
+co=0
+for i in correct_dates:
+     for j in chat_messages:
+         if  i in j:
+             co+=1
 
-    
+     print(f"there are {co} messages in {i}")
+     co=0
+print("The following are the participants: ")
+for i in set(participant_names):
+    print(i)
