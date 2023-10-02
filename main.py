@@ -34,6 +34,9 @@ for i in dates:
 
      print(f"{i},there are {co} messages in this dates")
      co=0
+print("The following are the participants: ")
+for i in set(participant_names):
+print(i)
 
 
     
